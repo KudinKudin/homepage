@@ -6,21 +6,26 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
+        font-family: 'Inter', 'Segoe UI', sans-serif;
+        line-height: 1.6;
+        color: #2d3748;
+        background-color: #f7fafc;
+        padding: 2rem;
 
-    --primary-text-color: #181820;
-    --secondary-text-color: #5c5c62;
-    --durability-text-color: #6a737d9c;
-    --icon-color: #6a737d;
-    --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
+        --primary-text-color: #2d3748;
+        --secondary-text-color: #4a5568;
+        --durability-text-color: #718096;
+        --icon-color: #4a5568;
+        --border-color: #e2e8f0;
+        --text-decoration-color: #4299e1;
+        --background-color: #ffffff;
+        --hover-color: #ebf8ff;
 }
 
 .container {
     margin: 0 auto;
     padding: 0 30px;
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 .fh {
@@ -37,16 +42,18 @@ body {
 
 .resume {
     margin: 50px auto;
-    border: 1px solid #f5f5f5;
-    box-shadow: 1px 1px 7px 7px #f5f5f5;
-    padding: 30px 0;
-    max-width: 900px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px 0;
+    max-width: 1000px;
+    background-color: var(--background-color);
+    border-radius: 8px;
 }
 
 .resume__block {
-    border-bottom: 3px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
     padding-bottom: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 576px) {
@@ -81,11 +88,15 @@ body {
     margin-bottom: 15px;
     text-decoration-color: var(--text-decoration-color);
     text-decoration-line: underline;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 .contact-info__sub-header {
     color: var(--secondary-text-color);
     margin-bottom: 30px;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .contact-info__block {
@@ -103,6 +114,14 @@ body {
     text-decoration: none;
     display: flex;
     justify-content: start;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.contact-info__item:hover {
+    background-color: var(--hover-color);
 }
 
 .contact-info__item:not(:last-child) {
@@ -127,13 +146,18 @@ body {
 
 .contact-info__avatar {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border: 3px solid;
     border-color: var(--text-decoration-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
 }
 
+.contact-info__avatar:hover {
+    transform: scale(1.05);
+}
 /* Intro and skills styles */
 
  .intro {
