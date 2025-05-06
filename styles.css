@@ -30,7 +30,7 @@ body {
 
 .fh {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -101,8 +101,9 @@ body {
 
 .contact-info__block {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+
 }
 
 .contact-info__block--center {
@@ -124,9 +125,6 @@ body {
     background-color: var(--hover-color);
 }
 
-.contact-info__item:not(:last-child) {
-    margin-bottom: 20px;
-}
 
 .contact-info__item-icon-wrapper {
     margin-right: 10px;
@@ -145,6 +143,8 @@ body {
 }
 
 .contact-info__avatar {
+    margin: 0 auto;
+    text-align: center;
     border-radius: 50%;
     width: 150px;
     height: 150px;
@@ -153,6 +153,7 @@ body {
     border-color: var(--text-decoration-color);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
+
 }
 
 .contact-info__avatar:hover {
@@ -163,6 +164,10 @@ body {
  .intro {
     display: flex;
     justify-content: start;
+    background-color: var(--hover-color);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .intro__icon-wrapper {
@@ -184,17 +189,23 @@ body {
 .intro_text {
     color: var(--secondary-text-color);
     text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.8;
 }
-
+.skills {
+    margin-bottom: 20px;
+}
 .skills__header {
-    color: var(--secondary-text-color);
-    text-align: center;
-    margin-bottom: 15px;
+    color: var(--primary-text-color);
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .skills__text {
     color: var(--secondary-text-color);
     text-align: justify;
+    line-height: 1.8;
 }
 
 /* Experience and additional info styles  */
@@ -205,9 +216,11 @@ body {
 }
 
 .experiences__header {
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     text-align: left;
     margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .experiences__company-header-durability {
@@ -215,6 +228,9 @@ body {
     text-align: left;
     margin-bottom: 10px;
     font-size: 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    
 }
 
 .experiences__company-header-name {
@@ -223,29 +239,38 @@ body {
     text-decoration-line: underline;
     text-align: left;
     margin-bottom: 20px;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 .experiences__company-project {
     margin-left: 15px;
     margin-bottom: 25px;
+    padding: 20px;
+    background-color: var(--hover-color);
+    border-radius: 8px;
 }
 
 .experiences__company-project-role {
     color: var(--durability-text-color);
     text-align: left;
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .experiences__company-project-name {
     color: var(--primary-text-color);
     text-align: left;
     margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .experiences__company-project-responsibilities {
     color: var(--secondary-text-color);
     padding-left: 20px;
+    line-height: 1.8;
 }
 
 .additional-info {
@@ -254,41 +279,57 @@ body {
 
 .additional-info__education {
     margin-bottom: 20px;
+    padding: 20px;
+    background-color: var(--hover-color);
+    border-radius: 8px;
 }
 
 .additional-info__education-header {
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     text-align: left;
     margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .additional-info__education-university-durability {
     color: var(--durability-text-color);
     text-align: left;
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
 .additional-info__education-university-speciality {
     color: var(--primary-text-color);
     text-align: left;
     margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .additional-info__education-university-name {
     color: var(--secondary-text-color);
+    font-size: 1rem;
 }
 
 .additional-info__languages {
     margin-bottom: 20px;
+    background-color: var(--hover-color);
+    border-radius: 8px;
+    
 }
 
 .additional-info__languages-header {
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     text-align: left;
     margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .additional-info__languages-item {
     color: var(--secondary-text-color);
+    margin-bottom: 10px;
+    font-size: 1rem;
 }
